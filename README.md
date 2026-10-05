@@ -1,19 +1,75 @@
-# :earth_americas: GDP dashboard template
+<div align="center">
 
-A simple Streamlit app showing the GDP of different countries in the world.
+# GDP Dashboard 🌍
 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://gdp-dashboard-template.streamlit.app/)
+**An interactive web dashboard for exploring and comparing the GDP of countries from 1960 to 2022.**
 
-### How to run it on your own machine
+![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
+![pandas](https://img.shields.io/badge/pandas-150458?logo=pandas&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?logo=streamlit&logoColor=white)
 
-1. Install the requirements
+</div>
 
-   ```
-   $ pip install -r requirements.txt
-   ```
+---
 
-2. Run the app
+## Overview
 
-   ```
-   $ streamlit run streamlit_app.py
-   ```
+A small Streamlit app that loads World Bank GDP data and lets you pick countries and a time range, then shows how their economies have grown.
+
+**Why it exists:** it is a hands-on introduction to Streamlit (data loading, caching, interactive widgets, Community Cloud deployment), the framework also used for [SchrödArt](https://github.com/Alyaa203/P2i).
+
+> **Credit:** this app is based on Streamlit's official [GDP dashboard template](https://github.com/streamlit/gdp-dashboard-template).
+
+---
+
+## Features
+
+- **Year range slider** from 1960 to 2022
+- **Country picker** (defaults: Germany, France, UK, Brazil, Mexico, Japan)
+- **Line chart** of GDP over time, one line per country
+- **Summary cards** showing each country's GDP in the final year (in billions of USD) and its growth factor over the selected period
+- **Cached data loading** so the app stays fast when you change the filters
+
+---
+
+## Tech stack
+
+| Area | Tools |
+| --- | --- |
+| Language | Python |
+| Data | pandas, [World Bank Open Data](https://data.worldbank.org/) (CSV in `data/`) |
+| Web interface and charts | Streamlit |
+| Dev environment | Dev Container (GitHub Codespaces) |
+
+---
+
+## Getting started
+
+Requires Python 3.9 or later.
+
+```bash
+git clone https://github.com/Alyaa203/gdp-dashboard.git
+cd gdp-dashboard
+pip install -r requirements.txt
+streamlit run streamlit_app.py
+```
+
+Then open http://localhost:8501.
+
+You can also open the repo in **GitHub Codespaces**: the Dev Container installs everything and starts the app automatically.
+
+---
+
+## Screenshots
+
+> _Screenshots coming soon._
+
+| GDP over time | Country summary |
+| :---: | :---: |
+| ![GDP over time](docs/screenshots/chart.png) | ![Country summary](docs/screenshots/metrics.png) |
+
+<!-- Add images to docs/screenshots/ using the file names above. -->
+
+---
+
+Licensed under the Apache 2.0 licence (see [`LICENSE`](LICENSE)).
