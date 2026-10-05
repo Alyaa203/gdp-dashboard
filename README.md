@@ -60,16 +60,4 @@ You can also open the repo in **GitHub Codespaces**: the Dev Container installs 
 
 ---
 
-## Screenshots
-
-> _Screenshots coming soon._
-
-| GDP over time | Country summary |
-| :---: | :---: |
-| ![GDP over time](docs/screenshots/chart.png) | ![Country summary](docs/screenshots/metrics.png) |
-
-<!-- Add images to docs/screenshots/ using the file names above. -->
-
----
-
 Licensed under the Apache 2.0 licence (see [`LICENSE`](LICENSE)).
